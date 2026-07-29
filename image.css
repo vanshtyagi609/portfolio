@@ -1,0 +1,126 @@
+/* Profile photo sizing */
+.profile-avatar {
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.certificate-link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.certificate-link:hover {
+  border-color: rgba(34, 211, 238, 0.75);
+  transform: translateX(8px);
+}
+
+.certificate-link b {
+  display: inline-block;
+  margin-left: 8px;
+  color: #22d3ee;
+  font-size: 0.85rem;
+}
+
+.achievement-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.achievement-group {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.achievement-group h3 {
+  margin-bottom: 16px;
+  color: #22d3ee;
+  font-size: 1.35rem;
+}
+
+.achievement-group .timeline {
+  max-width: none;
+}
+
+@media (max-width: 720px) {
+  .achievement-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact form UI — connect the action attribute to Formspree when ready. */
+.contact-form {
+  max-width: 720px;
+  margin: 32px auto 0;
+  display: grid;
+  gap: 18px;
+  text-align: left;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(8, 11, 22, 0.66);
+  color: #f8fafc;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.12);
+}
+
+.contact-form button {
+  border: 0;
+  cursor: pointer;
+  justify-self: center;
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

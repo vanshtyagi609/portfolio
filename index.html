@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="image.css" />
   </head>
   <body>
     <div class="cursor-glow"></div>
@@ -48,7 +49,9 @@
         </div>
         <div class="hero-card reveal delay-1">
           <div class="profile-ring">
-            <div class="profile-avatar">VT</div>
+            <div class="profile-avatar">
+              <img src="professional image (1).png" alt="Profile photo" />
+            </div>
           </div>
           <h2>Web Developer</h2>
           <p>React • Node.js • MongoDB • DSA</p>
@@ -187,22 +190,85 @@
           <p>Achievements</p>
           <h2>Certifications & Participation</h2>
         </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span></span>
-            <p>Deloitte Technology Job Simulation - 2025</p>
+        <div class="achievement-groups">
+          <div class="achievement-group">
+            <h3>Participation</h3>
+            <div class="timeline">
+              <a
+                class="timeline-item certificate-link"
+                href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_ANmJHB7NFbxk8tLnN_1752231811430_completion_certificate.pdf"
+              >
+                <span></span>
+                <p>
+                  Deloitte Technology Job Simulation - 2025
+                  <b>View certificate →</b>
+                </p>
+              </a>
+              <a
+                class="timeline-item certificate-link"
+                href="https://unstop.com/certificate-preview/9dfbb96a-31ef-4108-9d7a-1b8b5e21966f"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span></span>
+                <p>Adobe India Hackathon - 2025 <b>View certificate →</b></p>
+              </a>
+              <a
+                class="timeline-item certificate-link"
+                href="https://unstop.com/certificate-preview/222008f7-ba4e-47fd-b1bd-bd317852299e"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span></span>
+                <p>EY Techathon 6.0 <b>View certificate →</b></p>
+              </a>
+              <div class="timeline-item">
+                <span></span>
+                <p>Smart India Hackathon Prelims - 2024</p>
+              </div>
+            </div>
           </div>
-          <div class="timeline-item">
-            <span></span>
-            <p>Adobe India Hackathon - 2025</p>
-          </div>
-          <div class="timeline-item">
-            <span></span>
-            <p>Smart India Hackathon Prelims - 2024</p>
-          </div>
-          <div class="timeline-item">
-            <span></span>
-            <p>Web Development Certification</p>
+          <div class="achievement-group">
+            <h3>Certifications</h3>
+            <div class="timeline">
+              <a
+                class="timeline-item certificate-link"
+                href="https://www.theforage.com/completion-certificates/gCW7Xki5Y3vNpBmnn/L3NcyCoAjLno9d3T9_gCW7Xki5Y3vNpBmnn_ANmJHB7NFbxk8tLnN_1785159851536_completion_certificate.pdf"
+              >
+                <span></span>
+                <p>
+                  Datacom Software Development Job Simulation
+                  <b>View certificate →</b>
+                </p>
+              </a>
+              <a
+                class="timeline-item certificate-link"
+                href="https://www.credly.com/badges/5b83886e-2610-4cea-abd2-10945ff6db94"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span></span>
+                <p>Google Cloud Certification <b>View certificate →</b></p>
+              </a>
+              <a
+                class="timeline-item certificate-link"
+                href="https://www.salesforce.com/trailblazer/profile/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span></span>
+                <p>Salesforce Certification <b>View certificate →</b></p>
+              </a>
+              <a
+                class="timeline-item certificate-link"
+                href="https://www.udemy.com/certificate/UC-e8c22e5f-e6a0-4da0-8fd6-a365db2eba30/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span></span>
+                <p>Web Development Certification <b>View certificate →</b></p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -215,6 +281,43 @@
             I’m open to internships, projects, and software development
             opportunities.
           </p>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xykrvjzg"
+            method="POST"
+          >
+            <div class="form-row">
+              <label>
+                <span>Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </label>
+              <label>
+                <span>Email address</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </label>
+            </div>
+            <label>
+              <span>Your message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project or opportunity..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send Message →</button>
+          </form>
           <div class="contact-links">
             <a href="mailto:vansh.tyagi30104@gmail.com">Email Me</a>
             <a
